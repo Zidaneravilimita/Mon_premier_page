@@ -1,0 +1,165 @@
+.menu {
+    display: flex;
+    padding: 0px;
+}
+
+.menu li {
+    list-style-type: none;
+    
+}
+
+.menu li a {
+    margin-left: 180px;
+    color: navy;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: -10px;
+    font-size: 20px;
+    font-weight: bold;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, 30px;
+  }
+
+.menu a {
+    display: block;
+    min-width: 120px;
+    padding: 0.4rem 0;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    transition: all 1s;
+    position: relative;
+}
+
+.menu a:hover {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    color: #c7267e;
+    font-style: unset;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+  
+}
+
+
+.menu a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  bottom: -6px;
+  background: #fff;
+  border-radius: 5px;
+  transform: translateY(10px);
+  opacity: 0;
+  transition: .5s ease;
+  transform: scaleX(0);
+  transition: transform .3s;
+}
+
+.menu a:hover::after {
+    opacity: 1;
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(fond.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    position: fixed;
+}
+
+
+h1 {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    align-content: start;
+    align-items: start;
+    color: #7ceb15;
+    font-style: oblique;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.bi bi-facebook{
+    color: #3b5998;
+
+}
+.bi bi-twitter{
+    color:  #1da1f2;
+}
+
+.logo{
+    border-radius: 50px;
+    background-color: black;
+    height: 40px;
+    width: 40px;
+}
+
+.ser{
+    background-color: aliceblue;
+    cursor: pointer;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+
+.ser:hover{
+    background-color: #1da1f2;
+}
+
+h1{
+    text-align: center;
+}
+.accueil-section {
+    text-align: center;
+    padding: 50px;
+
+  }
+  
+  .accueil-section h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .accueil-section p {
+    font-size: 18px;
+    color: #2e2b2e;
+    margin-bottom: 30px;
+  }
+  
+  .accueil-section a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accueil-section a:hover {
+    background-color: #555;
+  }
+  

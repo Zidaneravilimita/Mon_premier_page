@@ -1,0 +1,348 @@
+body{
+    background-image: url(del.jpg);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    justify-content: center;
+   
+}
+
+/*input username*/
+.int-two{
+    min-height: 15px;
+    width: 80%;
+     padding: 10px 0;
+     margin: 5px 0;
+     border-left: 0;
+     border-right: 0;
+     border-top: 0;
+     border-bottom: 1px solid #000000;
+     outline: none;
+     background: transparent;
+ }
+
+ .int-two::placeholder{
+      color: white;
+ }
+
+ .int-two:focus{
+    color: #68ac40;
+
+ }
+
+ .int-two::selection{
+    background: #7c717a;
+    color: #df1d0f;
+ }
+/*input email*/
+.int-one{
+    min-height: 15px;
+    width: 80%;
+     padding: 10px 0;
+     margin: 5px 0;
+     border-left: 0;
+     border-right: 0;
+     border-top: 0;
+     border-bottom: 1px solid #000000;
+     outline: none;
+     background: transparent;
+ }
+ /*input password*/
+ .pswrd{
+     min-height: 15px;
+     width: 70%;
+     padding: 10px 0;
+     margin: 5px 0;
+     border-left: 0;
+     border-right: 0;
+     border-top: 0;
+     border-bottom: 1px solid #000000;
+     outline: none;
+     background: transparent;
+ }
+
+ .login-section{
+        margin: 90px;
+        margin-right: 10px;
+       background-image: url(d.jpg);
+       background-size: cover;
+       background-position: center;
+       background-repeat: no-repeat;
+        border: none;
+        border-radius: 32px;
+        width: 305px;
+        left: 450px;
+        height: 410px;
+        box-shadow: 5px 5px 10px rgb(94, 73, 199);
+       
+    }
+
+    .container {
+        text-align: center;
+        margin-right: 20px;
+    }
+
+/*button login*/
+    .button{
+        margin-top: 30px;
+        margin-left: 90px;
+        padding: 0.6em 2em;
+        border: none;
+        outline: none;
+        color: rgb(255, 255, 255);
+        background: #111;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+    }
+    
+    .button:before {
+        content: "";
+        background: linear-gradient( 45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        -webkit-filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing-button 20s linear infinite;
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 10px;
+    }
+    
+    @keyframes glowing-button {
+        0% {
+            background-position: 0 0;
+        }
+        50% {
+            background-position: 400% 0;
+        }
+        100% {
+            background-position: 0 0;
+        }
+    }
+    
+    .button:after {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #222;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+    }
+
+    .chp{
+       
+    }
+    .forget-pasword{
+        margin-left: 50px;
+    }
+
+    .titre-sign-in{
+        margin-left: 95px;
+        color: #2e21a0;
+    }
+    .titre-sign-up{
+        margin-left: 50px;
+        color: #2e21a0;
+    }
+    h3{
+        margin-left: 50px;
+    }
+    .text-social-reseau{
+        margin-left: 25px;
+    }
+    .social-reseau2{
+        margin-left: 80px;
+        cursor: pointer;
+    }
+    .social-reseau {
+        margin-left: 110px;
+        cursor: pointer;
+    }
+    
+    .hidden {
+        display: none;
+    }
+    /* CSS pour cacher le formulaire "Sign Up" au début */
+.form-box.registor {
+    display: none;
+  }
+  
+  /* CSS pour positionner les deux formulaires au même endroit */
+  .form-box {
+    position: absolute;
+    top: 61%;
+    left: 73.5%;
+    transform: translate(-50%, -80%);
+  }
+  
+  /*button2 login sur le formulaire sign Up*/
+  .button2{
+    margin-top: 30px;
+    margin-left: 70px;
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button2:before {
+    content: "";
+    background: linear-gradient( 45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+@keyframes glowing-button {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.button2:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+    
+.text{
+    color: #312c5f;
+}
+
+/* Styles pour les écrans de petite taille */
+@media only screen and (max-width: 767px) {
+    .login-section{
+        width: 595px;
+        height: 360px;
+       
+    }
+
+    .titre-sign-in{
+        margin-left: 85px;
+        color: #2e21a0;
+        height: 25px;
+    }
+    .titre-sign-up{
+        margin-left: 50px;
+        color: #2e21a0;
+    }
+
+    .button{
+        height: 25px;
+       
+    }
+
+    .button2{
+        height: 25px;
+       
+    }
+
+    .social-reseau{
+        width: 155px;
+    }
+
+    .social-reseau2{
+        width: 130px;
+    }
+
+    .int-one{
+        width: 140px;
+        margin-left: 20px;
+    }
+   .gmail{
+        margin-left: 49px;
+    }
+
+    .pswrd{
+        width: 140px;
+        margin-left: 20px;
+    }
+    .mdp{
+        margin-left: 49px;
+    }
+
+    
+}
+
+/* Styles pour les écrans de taille moyenne */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .login-section{
+        width: 405px;
+        height: 190px;
+      
+        
+    }
+
+    .titre-sign-in{
+        margin-left: 85px;
+        color: #2e21a0;
+        height: 5px;
+    }
+    .titre-sign-up{
+        margin-left: 50px;
+        color: #2e21a0;
+    }
+
+    .button{
+        height: 25px;
+       
+    }
+
+    .button2{
+        height: 25px;
+       
+    }
+
+}
+
+/* Styles pour les écrans de grande taille */
+@media only screen and (min-width: 1024px) {
+   
+
+
+}
